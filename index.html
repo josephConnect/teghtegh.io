@@ -30,20 +30,38 @@
     <title>Teghtegh Torkuma</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="main-nav">
-          <img
+          <!-- <img
             class="main-nav-logo"
             src="images/logo.png"
             alt="logo of the name Teghtegh"
-          />
+          /> -->
+          <h1 class="text-logo"><span>T</span>orkuma</h1>
+
           <ul class="main-nav-list" id="sidemenu">
-            <li class="main-nav-item"><a href="#home">Home</a></li>
-            <li class="main-nav-item"><a href="#about">About</a></li>
-            <li class="main-nav-item"><a href="#services">Services</a></li>
-            <li class="main-nav-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="main-nav-item"><a href="#contact">Contacts</a></li>
+            <li class="main-nav-item">
+              <a onclick="closemenu()" href="#home">Home</a>
+            </li>
+            <li class="main-nav-item">
+              <a onclick="closemenu()" href="#about">About</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" onclick="closemenu()" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" onclick="closemenu()" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" onclick="closemenu()" href="#contact"
+                >Contacts</a
+              >
+            </li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -53,7 +71,7 @@
           <p>Web Designer</p>
           <h1>
             Hi, I'm <span>Teghtegh</span> <br />
-            T. from Nigeria
+            T. from Nigeria.
           </h1>
         </div>
       </div>
@@ -70,10 +88,11 @@
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                provident earum officia ea reprehenderit ex architecto eius nam
-                est sequi, magni neque non et corporis autem dolores dolorum?
-                Excepturi, unde.
+                Hello, I'm Teghtegh Torkuma, and I work as a web designer. I
+                have been working as a web developer for quite some time now. I
+                believe I am a very ambitious person who loves to work on making
+                the website work well. Working on the web is my passion as I
+                love to work on exciting projects.
               </p>
 
               <div class="tab-titles">
@@ -92,15 +111,15 @@
                 <ul>
                   <li>
                     <span>Web Design</span><br />
-                    Designing the web
+                    Designing the web.
                   </li>
                   <li>
-                    <span>Web Design</span><br />
-                    Designing the web
+                    <span>Email Design</span><br />
+                    Designing Email letters.
                   </li>
                   <li>
-                    <span>Web Design</span><br />
-                    Designing the web
+                    <span>Teacher</span><br />
+                    Teaching others how to code.
                   </li>
                 </ul>
               </div>
@@ -108,33 +127,33 @@
               <div class="tab-contents" id="experience">
                 <ul>
                   <li>
+                    <span>Current</span><br />
+                    Freelancer on Upwork.
+                  </li>
+                  <!-- <li>
                     <span>Web Design</span><br />
                     Designing the web
                   </li>
                   <li>
                     <span>Web Design</span><br />
                     Designing the web
-                  </li>
-                  <li>
-                    <span>Web Design</span><br />
-                    Designing the web
-                  </li>
+                  </li> -->
                 </ul>
               </div>
 
               <div class="tab-contents" id="education">
                 <ul>
                   <li>
-                    <span>Web Design</span><br />
-                    Designing the web
+                    <span>2024</span><br />
+                    Responsive Web Design with Udemy.
                   </li>
                   <li>
-                    <span>Web Design</span><br />
-                    Designing the web
+                    <span>2022</span><br />
+                    JavaScript with Udemy.
                   </li>
                   <li>
-                    <span>Web Design</span><br />
-                    Designing the web
+                    <span>2021</span><br />
+                    VS45 Technologies, Gboko, Benue, Nigeria.
                   </li>
                 </ul>
               </div>
@@ -155,29 +174,36 @@
               ></ion-icon>
               <h2>Web Design</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                tempore optio recusandae incidunt excepturi obcaecati saepe.
+                I'm a web designer using HTML, CSS and JavaScript as designing
+                skills. I design modern and responsive web pages that fit all on
+                screen sizes with good user experience.
               </p>
               <a href="#">Learn more</a>
             </div>
             <div>
+              <!-- <ion-icon name="mail-outline"></ion-icon> -->
+              <ion-icon class="service-icon" name="mail-outline"></ion-icon>
+              <h2>Email Design</h2>
+              <p>
+                I'm also skilled in designing of Email letter for companies and
+                business. I give out good looking and outstanding email design
+                that fit on different screen sizes including laptobs and destob
+                devices.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <!-- <ion-icon name="code-download-outline"></ion-icon> -->
               <ion-icon
                 class="service-icon"
-                name="logo-web-component"
+                name="code-download-outline"
               ></ion-icon>
-              <h2>UI/UX</h2>
+              <h2>Teacher</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                tempore optio recusandae incidunt excepturi obcaecati saepe.
-              </p>
-              <a href="#">Learn more</a>
-            </div>
-            <div>
-              <ion-icon class="service-icon" name="logo-angular"></ion-icon>
-              <h2>App Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                tempore optio recusandae incidunt excepturi obcaecati saepe.
+                Teaching others how to code is also one of the areas I
+                specialise in. I guide others into the world of development on
+                how to produce modern and responsive web designers the suite the
+                current web design requirements.
               </p>
               <a href="#">Learn more</a>
             </div>
@@ -191,7 +217,7 @@
           <h2 class="sub-title">My Work</h2>
           <div class="work-list">
             <div class="work">
-              <img src="images/work-1.png" alt="sample of work" />
+              <img src="images/project.PNG" alt="sample of work" />
               <div class="layer">
                 <h3>Social Media App</h3>
                 <p>
@@ -207,7 +233,7 @@
               </div>
             </div>
             <div class="work">
-              <img src="images/work-2.png" alt="sample of work" />
+              <img src="images/project1.PNG" alt="sample of work" />
               <div class="layer">
                 <h3>Social Media App</h3>
                 <p>
@@ -222,7 +248,7 @@
                 ></a>
               </div>
             </div>
-            <div class="work">
+            <!-- <div class="work">
               <img src="images/work-3.png" alt="sample of work" />
               <div class="layer">
                 <h3>Social Media App</h3>
@@ -237,7 +263,7 @@
                   ></ion-icon
                 ></a>
               </div>
-            </div>
+            </div> -->
           </div>
           <a class="btn" href="#">See more</a>
         </div>
@@ -249,27 +275,47 @@
           <div class="row">
             <div class="contact-left">
               <h1 class="sub-title">Contact Me</h1>
-              <p>
+              <!-- <p>
                 <ion-icon class="contact-icons" name="send-outline"></ion-icon>
                 <span>josephtorkuma123@gmail.com</span>
-              </p>
-              <p>
+              </p> -->
+              <a
+                class="email-link"
+                href="mailto:josephtorkuma123@gmail.com"
+                target="”_blank”"
+              >
+                <ion-icon class="contact-icons" name="send-outline"></ion-icon>
+                josephtorkuma123@gmail.com</a
+              >
+              <!-- <p>
                 <ion-icon class="contact-icons" name="call-outline"></ion-icon>
                 07036416653
-              </p>
+              </p> -->
+              <a class="email-link" href="tel:07036416653" target="”_blank”">
+                <ion-icon class="contact-icons" name="call-outline"></ion-icon>
+                07036416653</a
+              >
               <div class="social-icons">
+                <a
+                  href="https://wa.me/+2347036416653?text=Hi, let's continue business!"
+                  target="”_blank”"
+                  ><ion-icon name="logo-whatsapp"></ion-icon
+                ></a>
+
+                <!-- href="https://wa.me/[YOUR_PHONE_NUMBER]?text=[YOUR_MESSAGE]">Start a WhatsApp Chat</a> -->
+
                 <a class="social-links" href="#"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+                <!-- <a class="social-links" href="#"
                   ><ion-icon name="logo-facebook"></ion-icon
                 ></a>
                 <a class="social-links" href="#"
                   ><ion-icon name="logo-facebook"></ion-icon
-                ></a>
-                <a class="social-links" href="#"
-                  ><ion-icon name="logo-facebook"></ion-icon
-                ></a>
+                ></a> -->
               </div>
-              <a class="btn btn2" href="images/my-cv.pdf" download
-                >Download CV</a
+              <!-- <a class="btn btn2" href="images/my-cv.pdf" download
+                >Download CV</a -->
               >
             </div>
             <div class="contact-right">
@@ -298,11 +344,7 @@
         </div>
       </section>
 
-      <div class="copyright">
-        Copyright &copy; Teghtegh. Made with
-        <ion-icon class="copyright-love-icon" name="heart-outline"></ion-icon>
-        by Limitless Possibilities
-      </div>
+      <div class="copyright">Copyright &copy; Teghtegh 2024</div>
     </main>
   </body>
 
@@ -324,6 +366,7 @@
 
   <script>
     var sidemenu = document.getElementById("sidemenu");
+
     function openmenu() {
       sidemenu.style.right = "0";
     }
