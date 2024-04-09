@@ -411,7 +411,7 @@ nav .fa-solid {
     /* background-image: linear-gradient(#b54769, #fff); */
     color: white;
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0.2;
   }
 
@@ -490,5 +490,9 @@ nav .fa-solid {
 
   .header-text {
     margin-top: 470px;
+  }
+
+  .email-link {
+    font-size: 16px;
   }
 }
