@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/d955b85038.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Teghtegh Torkuma</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="main-nav">
+          <img
+            class="main-nav-logo"
+            src="images/logo.png"
+            alt="logo of the name Teghtegh"
+          />
+          <ul class="main-nav-list" id="sidemenu">
+            <li class="main-nav-item"><a href="#home">Home</a></li>
+            <li class="main-nav-item"><a href="#about">About</a></li>
+            <li class="main-nav-item"><a href="#services">Services</a></li>
+            <li class="main-nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="main-nav-item"><a href="#contact">Contacts</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Designer</p>
+          <h1>
+            Hi, I'm <span>Teghtegh</span> <br />
+            T. from Nigeria
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/user.png" alt="picture of myself" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                provident earum officia ea reprehenderit ex architecto eius nam
+                est sequi, magni neque non et corporis autem dolores dolorum?
+                Excepturi, unde.
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Educaition
+                </p>
+              </div>
+
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                  <li>
+                    <span>Web Design</span><br />
+                    Designing the web
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERCVICES SECTION -->
+      <section class="services" id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <ion-icon
+                class="service-icon"
+                name="code-slash-outline"
+              ></ion-icon>
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                tempore optio recusandae incidunt excepturi obcaecati saepe.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <ion-icon
+                class="service-icon"
+                name="logo-web-component"
+              ></ion-icon>
+              <h2>UI/UX</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                tempore optio recusandae incidunt excepturi obcaecati saepe.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <ion-icon class="service-icon" name="logo-angular"></ion-icon>
+              <h2>App Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                tempore optio recusandae incidunt excepturi obcaecati saepe.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="sub-title">My Work</h2>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png" alt="sample of work" />
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
+                  consequuntur ullam delectus omnis deserunt reprehenderit
+                </p>
+                <a href="#"
+                  ><ion-icon
+                    class="portfolio-link-icon"
+                    name="link-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png" alt="sample of work" />
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
+                  consequuntur ullam delectus omnis deserunt reprehenderit
+                </p>
+                <a href="#"
+                  ><ion-icon
+                    class="portfolio-link-icon"
+                    name="link-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png" alt="sample of work" />
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
+                  consequuntur ullam delectus omnis deserunt reprehenderit
+                </p>
+                <a href="#"
+                  ><ion-icon
+                    class="portfolio-link-icon"
+                    name="link-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a class="btn" href="#">See more</a>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <ion-icon class="contact-icons" name="send-outline"></ion-icon>
+                <span>josephtorkuma123@gmail.com</span>
+              </p>
+              <p>
+                <ion-icon class="contact-icons" name="call-outline"></ion-icon>
+                07036416653
+              </p>
+              <div class="social-icons">
+                <a class="social-links" href="#"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+                <a class="social-links" href="#"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+                <a class="social-links" href="#"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+              </div>
+              <a class="btn btn2" href="images/my-cv.pdf" download
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form action="">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button class="btn btn2" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright">
+        Copyright &copy; Teghtegh. Made with
+        <ion-icon class="copyright-love-icon" name="heart-outline"></ion-icon>
+        by Limitless Possibilities
+      </div>
+    </main>
+  </body>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</html>
